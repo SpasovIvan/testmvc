@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+<div>
+    <h1 th:text="${shop.getName()}"/><br>
+    <h3 th:text="${shop.getCategory().getName()}"/><br>
+    <p th:text="${shop.getAddress()}"/><br>
+    <p th:text="${shop.getEmail()}"/><br>
+    <p th:text="${shop.getPhone()}"/><br>
+    <a th:text="${shop.getLink()}" th:href="${shop.getLink()}"/><br>
+    <p th:text="${shop.getDescription()}"/><br>
+</div>
+</body>
+</html>
